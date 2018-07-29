@@ -29,6 +29,8 @@ export class About extends React.Component {
                 <p><img src={require('../img/scenery.jpg')} alt='A picture' />
                 <video src={require('../img/documentary.mp4')} controls type='video/mp4' />
                 <img src={this.state.imageSrc} alt='' /></p>
+
+                <p>I hope to be able to make websites and contribute (through pull request) for web development projects such as iNaturalist.org someday. I gain satisfaction in seeing a finished product at the end of the day.</p>
             </div>
                 )
             }
