@@ -45,14 +45,14 @@ ol li.complete {
 	text-decoration: line-through;
 }
 
-ul {
+ul.navbarul {
     list-style-type: none;
     height: 20px;
     width: 100%;
     margin: auto;
 }
 
-ul li {
+ul li.navbarli {
 	float: left;
 }
 

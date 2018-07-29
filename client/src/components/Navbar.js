@@ -5,11 +5,11 @@ export class Navbar extends React.Component {
     render() {
         return(
             <nav>
-            <ul>
-              <li>
+            <ul className='navbarul'>
+              <li className='navbarli'>
                 <Link to="/about">About</Link>
               </li>
-              <li>
+              <li  className='navbarli'>
                 <Link to="/todos">To-do list</Link>
               </li>
             </ul>
