@@ -19,9 +19,9 @@ Brownie Points:
     - About me text
 2. React
     - ~~Todo list react code~~
-    - Make API call to express [2]
+    - Make API call to Express [2]
     - ~~Routes between React components~~
-3. Express API
+3. Express
     - API route for database [1]
     - Connect API to MongoDB [4]
 4. MongoDB & Mongoose

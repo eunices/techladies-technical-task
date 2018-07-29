@@ -4,7 +4,7 @@ export class About extends React.Component {
     state = {
         imgSrc: '',
     }
-    async componentDidMount(){
+    async componentDidMount() {
         // fetch API
         const response = await fetch('https://cataas.com/cat/gif')
         // asynchronous; does not wait for this call to finish but has await to stop for the next code block
@@ -19,16 +19,19 @@ export class About extends React.Component {
             return <p>Loading...</p>
         }
 
-        return(
+        return (
             <div>
-            <h1>{this.props.title}</h1>
-            <p>
-            Hello my name is Eunice!
-            </p>
-            <img src={this.state.imageSrc} alt=''/>
-            </div>
-        )
-    }
-}
+                <h1>{this.props.title}</h1>
+                <p>Hello my name is Eunice! I studied life science/biology and have graduated for about 3 yrs.</p>
 
+                <p>I used to take quite a lot of photographs! See my <a href="https://www.flickr.com/photos/crazyme">flickr account</a>. I also maintained a <a href='https://neverwildenough.blogspot.sg'>nature blog</a> and made amateur videos on <a href='https://vimeo.com/eunicesjy'>vimeo</a>.</p>
+
+                <p><img src={require('../img/scenery.jpg')} alt='A picture' />
+                <video src={require('../img/documentary.mp4')} controls type='video/mp4' />
+                <img src={this.state.imageSrc} alt='' /></p>
+            </div>
+                )
+            }
+        }
+        
 export default About;
