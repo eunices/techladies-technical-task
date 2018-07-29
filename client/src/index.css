@@ -45,6 +45,26 @@ ol li.complete {
 	text-decoration: line-through;
 }
 
+ul {
+    list-style-type: none;
+    height: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+ul li {
+	float: left;
+}
+
+ul li a {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: block; 
+    line-height: 50px;
+    text-decoration: none;
+    color: #999;
+}
+
 p {
 	padding: 0 2rem;
 }
