@@ -1,14 +1,14 @@
 import React from "react"
 import { Todos } from "./Todos";
-import { Header } from "./Header";
-import { About } from "./About";
+import { About } from "./AboutContent";
+import { Navbar } from "./Navbar";
+
 
 class App extends React.Component {
     render() {
-        return(
+        return (
             <div>
-                <Header />
-                <About title='About me' />
+                <Navbar />
                 <Todos />
             </div>
         )

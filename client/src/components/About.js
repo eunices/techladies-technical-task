@@ -1,34 +1,16 @@
-import React from "react";
+import React from "react"
+import { About } from "./AboutContent";
+import { Navbar } from "./Navbar";
 
-export class About extends React.Component {
-    state = {
-        imgSrc: '',
-    }
-    async componentDidMount(){
-        // fetch API
-        const response = await fetch('https://cataas.com/cat/gif')
-        // asynchronous; does not wait for this call to finish but has await to stop for the next code block
-        const imgBlob = await response.blob();
-        const imageSrc = window.URL.createObjectURL(imgBlob);
-        this.setState({
-            imageSrc: imageSrc
-        });
-    }
+class AboutMe extends React.Component {
     render() {
-        if (!this.state.imageSrc) {
-            return <p>Loading...</p>
-        }
-
-        return(
+        return (
             <div>
-            <h1>{this.props.title}</h1>
-            <p>
-            Hello my name is Eunice!
-            </p>
-            <img src={this.state.imageSrc} alt=''/>
+                <Navbar />
+                <About title='About me'/>
             </div>
         )
     }
 }
 
-export default About;
+export default AboutMe;
