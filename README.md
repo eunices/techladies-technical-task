@@ -8,6 +8,10 @@ This is a technical task submission for TechLadies bootcamp by Eunice Soh.
 2. A To-Do page where a user can add to-do tasks to a list, update existing tasks, delete existing tasks, and mark tasks as done.
 3. A navigation bar which allows you to navigate between the About Me and To-Do page.
 
+Brownie Points:
+- Database
+- Deploy to Heroku
+
 ## Todos
 
 1. HTML/CSS
