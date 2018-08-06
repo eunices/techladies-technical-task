@@ -26,7 +26,7 @@ Brownie Points:
     - Make API DELETE call
 3. Express
     - ~~Routing in Express~~
-    - Get/Post/Delete/Update APIs with MongoDB (in progress)
+    - ~~Get/Post/Delete/Update APIs with MongoDB~~
     - ~~Store keys in environment variables~~
 4. MongoDB & Mongoose
     - ~~Add data to MongoDB [3]~~

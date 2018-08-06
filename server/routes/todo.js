@@ -8,15 +8,17 @@ router.get('/test', todo_controller.test);
 // one route to list all
 router.get('/all', todo_controller.all);
 
-// one route for update
-// Todo
+// one route to add
+router.post('/add', todo_controller.add);
 
 // one route for delete
-// Todo
+router.get('/delete/:id', todo_controller.delete)
+
+// one route for update
+router.post('/update/:id', todo_controller.update);
 
 // routes that were created following a tutorial
-router.get('/:id', todo_controller.get_id);
-router.post('/add', todo_controller.add);
-router.delete('/:id/delete', todo_controller.delete_id);
+// router.get('/:id', todo_controller.get_id);
+// router.delete('/:id/delete', todo_controller.delete_id);
 
 module.exports = router;
