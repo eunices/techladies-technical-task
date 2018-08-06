@@ -22,7 +22,7 @@ Brownie Points:
     - ~~Todo list react code~~
     - ~~Routes between React components~~
     - ~~Make API GET call to Express~~
-    - Make API POST call
+    - ~~Make API POST call~~
     - Make API DELETE call
 3. Express
     - ~~Routing in Express~~
