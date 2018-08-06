@@ -51,5 +51,6 @@ Both strategies failed. They only work locally.
 ### Strategy 1 (which did not work out)
 App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-22118.herokuapp.com/
 
-### Strategy 2 (which also did not work out even after following the tutorial (here)[https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851])
+### Strategy 2 (which also did not work out too)
+Even after following the tutorial (here)[https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851])
 React + Express https://es-todo.herokuapp.com/ 
