@@ -2,7 +2,7 @@
 
 This is a technical task submission for TechLadies bootcamp by Eunice Soh.
 
-The main feature of this app is a todo list. The todo list is populated by MongoDB hosted on mLabs, using Express and Mongoose.
+The main feature of this app is a todo list. The todo list is populated by MongoDB hosted on mLabs, using Express and Mongoose. One can add tasks to the to-do list and it persists. However, the status of the todo items (isDone = true/false) do not persist.
 
 ## Technical task
 
