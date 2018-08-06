@@ -51,6 +51,15 @@ Both strategies failed. They only work locally.
 ### Strategy 1 (which did not work out)
 App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-22118.herokuapp.com/
 
+Problem: The React app was not able to communicate with the Express app.
+
 ### Strategy 2 (which also did not work out too)
 Even after following the tutorial (here)[https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851])
 React + Express https://es-todo.herokuapp.com/ 
+
+Problem: the app just kept crashing. Error message from `heroku logs --tail`:
+
+```
+2018-08-06T14:12:18.922434+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=es-todo.herokuapp.com request_id=2109d375-0006-4070-ac8b-044702925578 fwd="182.55.76.6" dyno= connect= service= status=503 bytes= protocol=https
+2018-08-06T14:12:20.304545+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=es-todo.herokuapp.com request_id=829451de-fa7f-44bf-b5ec-19051e2d7b4b fwd="182.55.76.6" dyno= connect= service= status=503 bytes= protocol=https
+```
