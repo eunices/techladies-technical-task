@@ -16,16 +16,16 @@ Brownie Points:
 
 1. HTML/CSS
     - Styling the page
-    - About me text
+    - ~~About me text~~
 2. React
     - ~~Todo list react code~~
-    - Make API call to Express [2]
+    - ~~Make API call to Express [2]~~
     - ~~Routes between React components~~
 3. Express
-    - API route for database [1]
+    - API route for database [1] (unable to do)
     - Connect API to MongoDB [4]
 4. MongoDB & Mongoose
-    - Add data to MongoDB [3]
+    - ~~Add data to MongoDB [3]~~
 5. Hosting on Heroku
     - Push app to Heroku [5]
 6. Finish Techladies application [6]

@@ -2,14 +2,21 @@ import React from "react"
 
 export class Todos extends React.Component {
     state = {
-        todos: [
-            // { description: 'exercise', isDone: true },
-            // { description: 'rest', isDone: false },
-            // { description: 'alter clothes', isDone: false },
-            // { description: 'finish proposal', isDone: false },
-            // { description: 'sleep!', isDone: false }
-        ],
+        todos: [], 
+        // todos: [
+        //     { description: 'exercise', isDone: true },
+        //     { description: 'rest', isDone: false },
+        //     { description: 'alter clothes', isDone: false },
+        //     { description: 'finish proposal', isDone: false },
+        //     { description: 'sleep!', isDone: false }
+        // ],
         newTodoDescription: ''
+    }
+
+    componentDidMount() {
+        fetch('/todos2')
+            .then(res => res.json())
+            .then(todos => this.state({todos}))
     }
 
     handleAddTodo = () => {
