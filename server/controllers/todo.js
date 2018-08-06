@@ -6,13 +6,19 @@ exports.test = function (req, res) {
 };
 
 exports.all = function(req, res) {
-    res.json([
-              { description: 'exercise', isDone: true },
-              { description: 'rest', isDone: false },
-              { description: 'alter clothes', isDone: false },
-              { description: 'finish proposal', isDone: false },
-              { description: 'sleep!', isDone: false }
-    ])
+    // res.json([
+    //           { description: 'exercise', isDone: true },
+    //           { description: 'rest', isDone: false },
+    //           { description: 'alter clothes', isDone: false },
+    //           { description: 'finish proposal', isDone: false },
+    //           { description: 'sleep!', isDone: false }
+    // ])
+    Todo.find(function (err, todos) {
+        if (err) {
+            return next(new Error(err))
+        }
+        res.json(todos)
+    })
 };
 
 exports.get_id = function (req, res, next) {
