@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "babel . --ignore node_modules,build --out-dir build",
-    "start": "nodemon -r babel-register app.js",
+    "start": "node ./bin/www && nodemon -r babel-register app.js",
     "start:prod": "node build/app.js"
   },
   "dependencies": {
