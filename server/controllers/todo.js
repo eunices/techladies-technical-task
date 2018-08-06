@@ -5,6 +5,20 @@ exports.test = function (req, res) {
     res.send('Greetings from the Test controller!');
 };
 
+// exports.all = function (req, res) {
+//     res.send('Greetings from the Test controller!');
+// };
+
+exports.all = function(req, res) {
+    res.json([
+              { description: 'exercise', isDone: true },
+              { description: 'rest', isDone: false },
+              { description: 'alter clothes', isDone: false },
+              { description: 'finish proposal', isDone: false },
+              { description: 'sleep!', isDone: false }
+    ])
+};
+
 exports.add = function (req, res, next) {
     let todo = new Todo(
         {
@@ -32,13 +46,6 @@ exports.delete_id = function (req, res, next) {
         if (err) return next(err);
         res.send('Deleted successfully!');
     })
-};
-
-exports.list_todos = function(req, res, next) {
-    Todo.find().exec(function (err, todos) {
-        if (err) return next(err);
-        res.send(todos)
-    });
 };
 
 // http://dreamerslab.com/blog/en/write-a-todo-list-with-express-and-mongodb/

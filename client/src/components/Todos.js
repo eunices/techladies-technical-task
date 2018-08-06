@@ -14,9 +14,9 @@ export class Todos extends React.Component {
     }
 
     componentDidMount() {
-        fetch('/todos2')
+        fetch('/todos/all')
             .then(res => res.json())
-            .then(todos => this.state({todos}))
+            .then(todos => this.setState({todos}))
     }
 
     handleAddTodo = () => {

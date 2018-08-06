@@ -19,11 +19,14 @@ Brownie Points:
     - ~~About me text~~
 2. React
     - ~~Todo list react code~~
-    - ~~Make API call to Express [2]~~
     - ~~Routes between React components~~
+    - ~~Make API GET call to Express~~
+    - Make API POST call
+    - Make delete todo [DELETE]
 3. Express
     - API route for database [1] (unable to do)
     - Connect API to MongoDB [4]
+    - Store passwords in environment variables
 4. MongoDB & Mongoose
     - ~~Add data to MongoDB [3]~~
 5. Hosting on Heroku

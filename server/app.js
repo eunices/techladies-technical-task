@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/todo2');
 var todoRouter = require('./routes/todo')
 
 var app = express();
@@ -20,7 +19,6 @@ mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -37,7 +35,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', indexRouter);
-app.use('/todos2', usersRouter);
 app.use('/todos', todoRouter);
 
 // catch 404 and forward to error handler
