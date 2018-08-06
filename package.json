@@ -1,0 +1,19 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "main": "server/app.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "concurrently": "^3.6.1",
+    "express": "^4.15.3"
+  },
+  "scripts": {
+    "install": "(cd client && npm install) && (cd server && npm install)",
+    "start": "concurrently \"cd client && PORT=3000 npm start\" \"cd server && PORT=8080 npm start\"",
+    "heroku-postbuild": "npm build"
+  },
+  "engines": {
+    "node": "9.11.1"
+ }
+}
