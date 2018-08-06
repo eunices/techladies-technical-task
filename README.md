@@ -37,4 +37,8 @@ Brownie Points:
 
 ## Deployment
 
+### Strategy 1 (which did not work out)
 App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-22118.herokuapp.com/
+
+### Strategy 2 (which worked out, using link above)
+React + Express https://es-todo.herokuapp.com/ 
