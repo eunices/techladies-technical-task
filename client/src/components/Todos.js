@@ -2,7 +2,7 @@ import React from "react"
 
 export class Todos extends React.Component {
     state = {
-        todos: [], 
+        todos: [],
         // todos: [
         //     { description: 'exercise', isDone: true },
         //     { description: 'rest', isDone: false },
@@ -16,7 +16,7 @@ export class Todos extends React.Component {
     componentDidMount() {
         fetch('/todos/all')
             .then(res => res.json())
-            .then(todos => this.setState({todos}))
+            .then(todos => this.setState({ todos }))
     }
 
     handleAddTodo = () => {
@@ -37,8 +37,15 @@ export class Todos extends React.Component {
         ];
         this.setState({
             todos: newTodos
+        });
+        fetch('/todos/add', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newTodo)
         })
-
     }
 
     handleOnChange = (event) => {
@@ -63,19 +70,19 @@ export class Todos extends React.Component {
             todos: this.state.todos
         }
         this.setState(updatedState)
+    
     }
 
     render() {
         return <div>
             <h1>To do list</h1>
-            {/* No need for form tag */}
             <label htmlFor='newTodoDescription'></label>
             <input
                 type='text'
                 value={this.state.newTodoDescription}
                 name='newTodoDescription'
                 id='newTodoDescription'
-                onChange={this.handleOnChange}/>
+                onChange={this.handleOnChange} />
             <button onClick={this.handleAddTodo}>+</button>
 
             <p>
