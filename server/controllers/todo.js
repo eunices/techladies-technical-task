@@ -5,10 +5,6 @@ exports.test = function (req, res) {
     res.send('Greetings from the Test controller!');
 };
 
-// exports.all = function (req, res) {
-//     res.send('Greetings from the Test controller!');
-// };
-
 exports.all = function(req, res) {
     res.json([
               { description: 'exercise', isDone: true },
@@ -17,6 +13,13 @@ exports.all = function(req, res) {
               { description: 'finish proposal', isDone: false },
               { description: 'sleep!', isDone: false }
     ])
+};
+
+exports.get_id = function (req, res, next) {
+    Todo.findById(req.params.id, function(err, todo) {
+        if (err) return next(err);
+        res.send(todo)
+    })
 };
 
 exports.add = function (req, res, next) {
@@ -31,13 +34,6 @@ exports.add = function (req, res, next) {
             return next(err);
         }
         res.send('Added')
-    })
-};
-
-exports.get_id = function (req, res, next) {
-    Todo.findById(req.params.id, function(err, todo) {
-        if (err) return next(err);
-        res.send(todo)
     })
 };
 

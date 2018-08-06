@@ -1,3 +1,4 @@
+require('dotenv').config({path: __dirname + '/process.env'})
 var createError = require('http-errors');
 var express = require('express');
 const bodyParser = require('body-parser');
@@ -10,11 +11,9 @@ var todoRouter = require('./routes/todo')
 
 var app = express();
 
-
 // Set up mongoose connection
 const mongoose = require('mongoose');
-let dev_db_url = 'mongodb://eunix:whatever1@ds157901.mlab.com:57901/eunix-todo';
-let mongoDB = process.env.MONGODB_URI || dev_db_url;
+let mongoDB = process.env.MONGODB_URI
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
