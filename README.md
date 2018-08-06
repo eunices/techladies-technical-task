@@ -32,7 +32,7 @@ Brownie Points:
 4. MongoDB & Mongoose
     - ~~Add data to MongoDB [3]~~
 5. Hosting on Heroku
-    - ~~Push app to Heroku [5] (resources: (here)[https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851])
+    - ~~Push app to Heroku [5] (resources: [here](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851)
 6. ~~Finish Techladies application [6]~~
 
 ## Getting started
@@ -54,7 +54,7 @@ App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-2211
 Problem: The React app was not able to communicate with the Express app.
 
 ### Strategy 2 (which also did not work out too)
-Even after following the tutorial (here)[https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851])
+Even after following the tutorial [here](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851)
 React + Express https://es-todo.herokuapp.com/ 
 
 Problem: the app just kept crashing. Error message from `heroku logs --tail`:
