@@ -2,6 +2,8 @@
 
 This is a technical task submission for TechLadies bootcamp by Eunice Soh.
 
+The main feature of this app is a todo list. The todo list is populated by MongoDB hosted on mLabs, using Express and Mongoose.
+
 ## Technical task
 
 1. An About Me page with a few paragraphs describing who you are, why you want to be part of the TechLadies Bootcamp, and include one image (it can be a photo of yourself or anything you like (cats are always a good option!))
