@@ -32,10 +32,9 @@ Brownie Points:
 4. MongoDB & Mongoose
     - ~~Add data to MongoDB [3]~~
 5. Hosting on Heroku
-    - ~~Push app to Heroku [5] (resources: [here]~~(https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851))
+    - ~~Push app to Heroku [5] (resources: (here) [https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851])
 6. ~~Finish Techladies application [6]~~
 
 ## Deployment
 
-App (React) https://eunix-todo.herokuapp.com/
-Express https://safe-plains-22118.herokuapp.com/
+App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-22118.herokuapp.com/
