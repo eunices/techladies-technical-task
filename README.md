@@ -35,7 +35,18 @@ Brownie Points:
     - ~~Push app to Heroku [5] (resources: (here)[https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851])
 6. ~~Finish Techladies application [6]~~
 
+## Getting started
+
+Pre-requisites: nodejs
+
+1. Git clone https://github.com/eunices/techladies-technical-task.git
+2. Get to the root directory of the repo
+3. Type `npm install`
+4. Type `npm start`. A browser window for http://localhost:3000 should launch.
+
 ## Deployment
+
+Both strategies failed. They only work locally.
 
 ### Strategy 1 (which did not work out)
 App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-22118.herokuapp.com/
