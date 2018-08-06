@@ -56,7 +56,9 @@ App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-2211
 Problem: the React app did not work with error `Invalid Host header` (tried reading up on the issue but was not able to resolve), and also not sure how to make API calls to the Express app (locally, I used `proxy` in `packages.json`. The Express API worked though. I could make API calls.
 
 ### Strategy 2 (which also did not work out too)
-Even after following the tutorial [here](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851)
+Did not work out even after following the tutorial [here](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851)
+
+
 React + Express https://es-todo.herokuapp.com/ 
 
 Problem: the app just kept crashing. Error message from `heroku logs --tail`:
