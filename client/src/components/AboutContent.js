@@ -26,7 +26,7 @@ export class About extends React.Component {
 
                 <p>I used to take quite a lot of photographs! See my <a href="https://www.flickr.com/photos/crazyme">flickr account</a>. I also maintained a <a href='https://neverwildenough.blogspot.sg'>nature blog</a> and made amateur videos on <a href='https://vimeo.com/eunicesjy'>vimeo</a>.</p>
 
-                <p><img src={require('../img/scenery.jpg')} alt='A picture' />
+                <p><img src={require('../img/scenery.jpg')} alt='Scenery' />
                 <video src={require('../img/documentary.mp4')} controls type='video/mp4' />
                 <img src={this.state.imageSrc} alt='' /></p>
 
