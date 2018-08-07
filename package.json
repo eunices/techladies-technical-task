@@ -9,7 +9,7 @@
   },
   "scripts": {
     "install": "(npm install) && (cd client && npm install) && (cd server && npm install)",
-    "start": "concurrently \"cd client && npm run build\" \"cd server && npm start\""
+    "start": "(cd client && npm run build) && (cd server && npm start)"
   },
   "engines": {
     "node": "9.11.1"
