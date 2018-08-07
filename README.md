@@ -67,7 +67,7 @@ Problem: the React app did not work with error `Invalid Host header` (tried read
 
 ### Strategy 2 (which also did not work out too)
 
-Did not work out even after following the tutorial [here](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851). In the repo, I set `heroku config:set MONGDB_URL='my_db_uri'` first before pushing to Heroku.
+Did not work out even after following the tutorial [here](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851 - p.s. I cloned the repo and it did not work either http://test-app-es.herokuapp.com). In the repo, I set `heroku config:set MONGDB_URL='my_db_uri'` first before pushing to Heroku.
 
 Links: React + Express https://es-todo.herokuapp.com/
 
