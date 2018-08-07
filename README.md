@@ -48,7 +48,8 @@ Pre-requisites: nodejs
 1. Type `git clone https://github.com/eunices/techladies-technical-task.git`
 2. Change your directory to the repo
 3. Type `npm install`
-4. Type `npm start`. A browser window for http://localhost:3000 should launch.
+4. Type `npm start`
+5. Go to `localhost:3001` on your browser
 
 ## Deployment
 
