@@ -8,7 +8,7 @@
     "rimraf": "^2.5.4"
   },
   "scripts": {
-    "install": "(npm install && cd client && npm install) && (cd server && npm install)",
+    "install": "(npm install) && (cd client && npm install) && (cd server && npm install)",
     "start": "concurrently \"cd client && npm run build\" \"cd server && npm start\""
   },
   "engines": {
