@@ -15,7 +15,10 @@ export class Todos extends React.Component {
 
     componentDidMount() {
         fetch('/todos/all')
-            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+                return res.json()
+            })
             .then(todos => this.setState({ todos }))
     }
 

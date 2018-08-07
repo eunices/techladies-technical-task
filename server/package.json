@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "babel . --ignore node_modules,build --out-dir build",
-    "start": "set PORT=3001 && nodemon ./bin/www",
-    "start:prod": "set PORT=3001 && node ./bin/www"
+    "build": "npm install",
+    "dev": "nodemon ./bin/www",
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",

@@ -36,12 +36,14 @@ app.use(staticFiles)
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+
+// any routes not picked up by the server api will be handled by the react router
+// app.use('/*', staticFiles)
+
 // routes
 app.use('/', indexRouter);
 app.use('/todos', todoRouter);
 
-// any routes not picked up by the server api will be handled by the react router
-app.use('/*', staticFiles)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
