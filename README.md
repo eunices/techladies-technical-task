@@ -59,7 +59,7 @@ Both strategies failed. They only work locally.
 
 Links: App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plains-22118.herokuapp.com/
 
-Problem: the React app did not work with error `Invalid Host header` (tried reading up on the issue but was not able to resolve), and also not sure how to make API calls to the Express app (locally, I used `proxy` in `packages.json`. The Express API worked though. I could make API calls.
+Problem: the React app did not work with error `Invalid Host header` (tried reading up on the issue but was not able to resolve), and also not sure how to make API calls to the Express app (locally, I used `proxy` in `packages.json`. The Express API worked though. I could make APIs calls (e.g., GET from /todos/all).
 
 ### Strategy 2 (which also did not work out too)
 
