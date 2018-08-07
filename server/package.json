@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build": "babel . --ignore node_modules,build --out-dir build",
-    "start": "node ./bin/www && nodemon -r babel-register app.js",
-    "start:prod": "node ./bin/www && node -r build/app.js"
+    "start": "nodemon ./bin/www",
+    "start:prod": "node ./bin/www"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
