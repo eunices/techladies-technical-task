@@ -65,6 +65,8 @@ Did not work out even after following the tutorial [here](https://originmaster.c
 
 React + Express https://es-todo.herokuapp.com/ 
 
+In the repo, I set `heroku config:set MONGDB_URL='my_db_uri'` first before pushing to Heroku.
+
 Problem: the app just kept crashing. Error message from `heroku logs --tail`:
 
 ```
