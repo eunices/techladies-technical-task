@@ -4,6 +4,8 @@ This is a technical task submission for TechLadies bootcamp by Eunice Soh.
 
 The main feature of this app is a todo list. The todo list is populated by MongoDB hosted on mLabs, using Express and Mongoose. One can add tasks to the to-do list and it persists. However, the status of the todo items (isDone = true/false) do not persist.
 
+Environment variables (such as DB URI) are stored in .env so that credentials are not revealed. Please email eunice.sjy@gmail.com for the .env file.
+
 ## Technical task
 
 1. An About Me page with a few paragraphs describing who you are, why you want to be part of the TechLadies Bootcamp, and include one image (it can be a photo of yourself or anything you like (cats are always a good option!))

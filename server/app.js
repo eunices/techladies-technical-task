@@ -1,4 +1,6 @@
 require('dotenv').config({path: __dirname + '/process.env'})
+
+var path = require('path');
 var createError = require('http-errors');
 var express = require('express');
 const bodyParser = require('body-parser');
@@ -28,14 +30,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.resolve(__dirname, './client/build')));
+const staticFiles = express.static(path.join(__dirname, '../../client/build'))
+app.use(staticFiles)
 
 // set up body parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+// routes
 app.use('/', indexRouter);
 app.use('/todos', todoRouter);
+app.use('/*', staticFiles)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
