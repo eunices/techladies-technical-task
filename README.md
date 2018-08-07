@@ -19,6 +19,8 @@ Brownie Points:
 
 ## Todos
 
+I could not finish everything I planned out to do but the basic app is working. I wanted to persist the isDone everytime it is changed and also delete todos from the database.
+
 1. HTML/CSS
     - Styling the page
     - ~~About me text~~
