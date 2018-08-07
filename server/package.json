@@ -5,7 +5,7 @@
   "scripts": {
     "build": "babel . --ignore node_modules,build --out-dir build",
     "start": "node ./bin/www && nodemon -r dotenv/config -r babel-register app.js",
-    "start:prod": "node ./bin/www && node -r dotenv/config -r build/app.js"
+    "start:prod": "node ./bin/www && node -r build/app.js"
   },
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
