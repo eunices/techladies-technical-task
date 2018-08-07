@@ -30,7 +30,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-const staticFiles = express.static(path.join(__dirname, '../../client/build'))
+const staticFiles = express.static(path.join(__dirname, '../client/build'))
 app.use(staticFiles)
 
 // set up body parser
