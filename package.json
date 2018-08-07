@@ -1,14 +1,15 @@
 {
   "name": "todoapp",
   "version": "1.0.0",
-  "main": "server/app.js",
+  "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "babel-cli": "^6.26.0",
     "concurrently": "^3.6.1",
-    "express": "^4.15.3"
+    "rimraf": "^2.5.4"
   },
   "scripts": {
+    "build": "concurrently \"cd client && npm build\" \"cd server && npm build\"",
+    "clean": "concurrently \"rimraf node_modules\" \"cd client && rimraf node_modules build\" \"cd server && rimraf node_modules build\"",
     "install": "(cd client && npm install) && (cd server && npm install)",
     "start": "concurrently \"cd client && PORT=3000 npm start\" \"cd server && PORT=3001 npm start\"",
     "heroku-postbuild": "npm build",
