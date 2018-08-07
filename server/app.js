@@ -1,4 +1,4 @@
-require('dotenv').config({path: __dirname + '/process.env'})
+require('dotenv').config({path: __dirname + '/.env'})
 
 var path = require('path');
 var createError = require('http-errors');
@@ -15,7 +15,7 @@ var app = express();
 
 // Set up mongoose connection
 const mongoose = require('mongoose');
-let mongoDB = process.env.MONGODB_URI
+let mongoDB = process.env.MONGODB_URI || MONGODB_URI
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
