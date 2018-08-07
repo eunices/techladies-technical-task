@@ -65,11 +65,11 @@ Links: App (React) https://eunix-todo.herokuapp.com/ | Express https://safe-plai
 
 Problem: the React app did not work with error `Invalid Host header` (tried reading up on the issue but was not able to resolve), and also not sure how to make API calls to the Express app (locally, I used `proxy` in `packages.json`. The Express API worked though. I could make APIs calls (e.g., GET from /todos/all).
 
-### Strategy 2 (which also did not work out too)
+### Strategy 2 (which also did not work out initially until with help from Amanda during code clinic 2 - Thank you!!)
+
+#### Try 1 (did not work)
 
 Did not work out even after following the tutorial [here](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851) (p.s. I cloned the repo and it did not work either http://test-app-es.herokuapp.com). In the repo, I set `heroku config:set MONGDB_URL='my_db_uri'` first before pushing to Heroku.
-
-Links: React + Express https://es-todo.herokuapp.com/
 
 Problem: the app just kept crashing. Not sure what's wrong. Error message from `heroku logs --tail`:
 
@@ -77,3 +77,7 @@ Problem: the app just kept crashing. Not sure what's wrong. Error message from `
 2018-08-06T14:12:18.922434+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=es-todo.herokuapp.com request_id=2109d375-0006-4070-ac8b-044702925578 fwd="182.55.76.6" dyno= connect= service= status=503 bytes= protocol=https
 2018-08-06T14:12:20.304545+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=es-todo.herokuapp.com request_id=829451de-fa7f-44bf-b5ec-19051e2d7b4b fwd="182.55.76.6" dyno= connect= service= status=503 bytes= protocol=https
 ```
+
+#### Try 2 (it works)
+
+Links: React + Express https://es-todo2.herokuapp.com/
