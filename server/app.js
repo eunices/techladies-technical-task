@@ -1,6 +1,5 @@
 require('dotenv').config({path: __dirname + '/.env'})
 
-var path = require('path');
 var createError = require('http-errors');
 var express = require('express');
 const bodyParser = require('body-parser');
