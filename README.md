@@ -55,7 +55,7 @@ Pre-requisites: nodejs
 
 ## Deployment
 
-Both strategies failed. They only work locally.
+Both strategies below failed. Repo only works locally.
 
 ### Strategy 1 (which did not work out)
 
