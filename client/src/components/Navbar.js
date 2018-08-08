@@ -10,7 +10,7 @@ export class Navbar extends React.Component {
                 <Link to="/about">About</Link>
               </li>
               <li  className='navbarli'>
-                <Link to="/todos">To-do list</Link>
+                <Link to="/todolist">To-do list</Link>
               </li>
             </ul>
           </nav>
