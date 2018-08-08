@@ -1,6 +1,6 @@
 # Readme
 
-This is a technical task submission for TechLadies bootcamp by Eunice Soh.
+This is a technical task submission for TechLadies bootcamp by Eunice Soh deployed on https://es-todo2.herokuapp.com/.
 
 ![screenshot](http://i66.tinypic.com/wl0ut.png)
 
