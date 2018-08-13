@@ -32,7 +32,7 @@ I could not finish everything I planned out to do but the basic app is working. 
     - ~~Make API GET call to Express~~
     - ~~Make API POST call~~ (to add todos)
     - Make API POST call (to edit todo description)
-    - Make API DELETE call
+    - Make API DELETE call (to delete tasks that are done)
 3. Express
     - ~~Routing in Express~~
     - ~~Get/Post/Delete/Update APIs with MongoDB~~
